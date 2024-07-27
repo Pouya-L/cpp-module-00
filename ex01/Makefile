@@ -6,18 +6,20 @@
 #    By: plashkar <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 14:11:07 by plashkar          #+#    #+#              #
-#    Updated: 2024/07/27 15:09:42 by plashkar         ###   ########.fr        #
+#    Updated: 2024/07/27 15:09:45 by plashkar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = Phonebook
 
 CC = c++
 
 STANDARD_FLAGS = -Wall -Werror -Wextra -std=c++98 -g
 
 SRC = \
-	megaphone.cpp
+	Phonebook.cpp \
+	Contact.cpp \
+	main.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -29,7 +31,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@echo "Compiling $@"
 	@$(CC) $(STANDARD_FLAGS) $(OBJ) -o $(NAME) > /dev/null
-	@echo "megaphone has been created."
+	@echo "Phonebook has been created."
 
 clean:
 	@rm -f *.o
@@ -43,5 +45,6 @@ re: fclean all
 
 v: all clean
 	@echo
+	@./Phonebook
 
 .PHONY: fclean clean all re
