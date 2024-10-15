@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plashkar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 12:32:38 by plashkar          #+#    #+#             */
-/*   Updated: 2024/07/26 20:38:31 by plashkar         ###   ########.fr       */
+/*   Updated: 2024/10/15 09:15:20 by plashkar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 #define PHONEBOOK_HPP
 
 #include "Contact.hpp"
-
-
 
 class Phonebook
 {

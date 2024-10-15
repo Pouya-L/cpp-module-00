@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plashkar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 09:35:31 by plashkar          #+#    #+#             */
-/*   Updated: 2024/06/07 13:06:06 by plashkar         ###   ########.fr       */
+/*   Updated: 2024/10/15 09:21:19 by plashkar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	main(int argc, char **argv)
 				argv[i][j] = (char)toupper(argv[i][j]);
 			}
 			std::cout << argv[i];
-			if (i < argc - 1)
-				std::cout << " ";
+			// if (i < argc - 1)
+			// 	std::cout << " ";
 		}
 		std::cout << std::endl;
 		return (0);
