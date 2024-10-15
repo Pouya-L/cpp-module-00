@@ -1,6 +1,8 @@
 # C++ - Module 00
 
 ## Project Overview
+C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". 
+The goal of these modules is to introduce us to Object-Oriented Programming.
 `C++ - Module 00` containts  the exercises of Module 00 from C++ modules. Some of the concepts we hae to learn here are as follows: Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff
 
 ## Getting Started
