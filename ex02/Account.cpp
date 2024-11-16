@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plashkar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 00:02:49 by plashkar          #+#    #+#             */
-/*   Updated: 2024/07/27 15:04:08 by plashkar         ###   ########.fr       */
+/*   Updated: 2024/11/16 18:03:48 by plashkar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void	Account::_displayTimestamp(void)
 	std::time_t	now = time(NULL);
 	std::tm *local_time = std::localtime(&now);
 	std::strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", local_time);
-	std::cout << "[" << buffer << "]" << std::flush;
+	std::cout << "[" << buffer << "] " << std::flush;
 }
 
 /**
@@ -116,7 +116,7 @@ void	Account::displayAccountsInfos( void )
 	std::cout << "accounts:" << Account::getNbAccounts() << ";"
 				<< "total:" << Account::getTotalAmount() << ";"
 				<< "deposits:" << Account::getNbDeposits() << ";"
-				<< "withdrawals" << Account::getNbWithdrawals() << std::endl;
+				<< "withdrawals:" << Account::getNbWithdrawals() << std::endl;
 }
 
 /**
@@ -138,7 +138,7 @@ void	Account::makeDeposit(int deposit)
 	_totalAmount +=deposit;
 	std::cout << "deposit:" << deposit << ";"
 				<< "amount:" << _amount << ";"
-				<< "nb_deposits" << _nbDeposits << std::endl;
+				<< "nb_deposits:" << _nbDeposits << std::endl;
 }
 
 /**
