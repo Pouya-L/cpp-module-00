@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plashkar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 18:23:12 by plashkar          #+#    #+#             */
-/*   Updated: 2024/07/26 23:52:04 by plashkar         ###   ########.fr       */
+/*   Updated: 2024/11/19 13:50:31 by plashkar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,20 @@ std::string	Contact::printLen(std::string str)
 void	Contact::init(void)
 {
 	this->firstName = this->getInput("Please enter the first name: ", 0);
+	if (this->firstName == "")
+		return ;
 	this->lastName = this->getInput("Please enter the last name: ", 0);
+	if (this->lastName == "")
+		return ;
 	this->nickName = this->getInput("Please enter a nickname for them: ", 0);
+	if (this->nickName == "")
+		return ;
 	this->phoneNumber = this->getInput("Please enter the phone number: ", 1);
+	if (this->phoneNumber == "")
+		return ;
 	this->darkestSecret = this->getInput("Please enter their darkest secret: ", 0);
+	if (this->darkestSecret == "")
+		return ;
 }
 
 void	Contact::setIndex(int index)
@@ -116,11 +126,11 @@ void	Contact::displayContact(int	index)
 	}
 	std::cout << std::endl;
 	std::cout << "Contact #" << index << std::endl;
-	std::cout << "First name:\t" << this->firstName << std::endl;
-	std::cout << "Last name:\t" << this->lastName << std::endl;
-	std::cout << "Nickname: \t" << this->nickName << std::endl;
-	std::cout << "Phone number: \t" << this->phoneNumber << std::endl;
-	std::cout << "Darkest secret: \t" << this->darkestSecret << std::endl;
+	std::cout << "First name: " << this->firstName << std::endl;
+	std::cout << "Last name: " << this->lastName << std::endl;
+	std::cout << "Nickname: " << this->nickName << std::endl;
+	std::cout << "Phone number: " << this->phoneNumber << std::endl;
+	std::cout << "Darkest secret: " << this->darkestSecret << std::endl;
 	std::cout << std::endl;
 }
 

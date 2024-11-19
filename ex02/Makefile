@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: plashkar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/27 14:51:52 by plashkar          #+#    #+#              #
-#    Updated: 2024/07/27 15:09:39 by plashkar         ###   ########.fr        #
+#    Updated: 2024/11/19 13:25:03 by plashkar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,11 +33,10 @@ $(NAME): $(OBJ)
 	@echo "Account has been created."
 
 clean:
-	@rm -f *.o
+	@rm -f $(OBJ)
 	@echo Object files have been deleted.
 
 fclean: clean
-	@rm -f $(philo_LIB)
 	@rm -f $(NAME)
 	@echo All created files have been deleted.
 

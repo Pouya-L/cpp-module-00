@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: plashkar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 14:11:07 by plashkar          #+#    #+#              #
-#    Updated: 2024/07/27 15:09:45 by plashkar         ###   ########.fr        #
+#    Updated: 2024/11/19 13:24:43 by plashkar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ $(NAME): $(OBJ)
 	@echo "Phonebook has been created."
 
 clean:
-	@rm -f *.o
+	@rm -f $(OBJ)
 	@echo Object files have been deleted.
 
 fclean: clean
